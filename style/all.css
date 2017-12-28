@@ -1,0 +1,510 @@
+/*Laptop styling and common styling between different sized devices*/
+.clear {
+  clear: both;
+}
+
+/*Code for slideshow based off of lab 13*/
+#slide {
+  width: 100%;
+  display: block;
+  margin: 0px auto;
+}
+
+.image_slides {
+  display: block;
+  margin: 0px auto;
+  width: 99%;
+  padding: 5px 5px;
+}
+
+#home{
+  font-family:arial;
+  background-image: url("./images/home.jpg");
+  background-attachment: fixed;
+  background-size: 100%;
+  background-repeat: repeat;
+  /*Learned how to make a picture the background at https://www.w3schools.com/css/css_background.asp.
+  I fully understand that background-image: is the location of the image/name of the image,
+  background-attachment: fixed means that the image is fixed as the background and doesn't move with the scroll,
+  background-size: 100% means that the image will fit 100% of the screen,
+  and that background-repeat: no-repeat means that the image will not repeat itself if it is too small to fit the screen*/
+  /*Image Source: Joyce Bi took this on a Nikon D3400*/
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-right: 10px;
+  margin:auto;
+  padding: 5px;
+  background-color: rgba(255,255,255, 0.8);
+  overflow: hidden;
+  width: 99%;
+  /* Learned how to make this type of nav bar from: https://www.w3schools.com/css/css_navbar.asp
+  I fully understand list-style-type: none; gets rid of the automatic styling of HTML (like the bullet points)
+  and that the margins clears a certain area around an element, while padding clears a certain area within an element around the content
+  I understand that rgba gives the color, with the last value corresponding to opacity
+  The overflow: hidden specifies that if the element's box is too small, the overflown elements will be hidden
+  The width indicates that the nav bar should take up 99% of the screen width.*/
+}
+
+li {
+  display:inline;
+}
+
+nav{
+  text-align: center;
+}
+
+li a {
+  display:inline-block;
+  color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* Learned how to format the text in the nav bar at https://www.w3schools.com/css/css_navbar.asp
+  I fully understand that display: block; means that the element is displayed as a block. This means that it
+  has some white space around it and generally does not have other HTML elements near it unless specified
+  The color indicates the text color black, with the last value (0.6) indicating the opacity
+  text-align; center indicates that the text should be centered within its block
+  padding 20px means that there are 20 px of space around each side of the content within the block
+  text-decoration: none gets rid of the usual underline and all other text decorations
+  and postion: relative denotes the position relative to the regular normal position*/
+}
+
+li a:hover {
+  color: #0080FF;
+}
+
+span{
+  font-weight: bold;
+}
+
+img {
+  display:block;
+  margin-top: 25px;
+  width: 50%;
+  border: 0px solid;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin:auto;
+  margin-top: 25px;
+}
+
+.smaller{
+  display:block;
+  margin-top: 25px;
+  width: 25%;
+  border: 0px solid;
+  padding: 10px 10px;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin:auto;
+  margin-top: 25px;
+}
+
+.heading1 {
+  margin-left: 0px;
+  width: 99%;
+  padding: 5px 5px;
+  text-align: center;
+  font-size: 70px;
+  font-weight:100;
+  background-color: rgba(255,255,255, 0.7);
+  color: #393d44;
+  letter-spacing: 5px;
+}
+
+.heading2 {
+  color: #393d44;
+  font-size: 30px;
+  line-height: 160%;
+  font-weight: 100;
+  width: 760px;
+  text-align: center;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 25px;
+  margin: auto;
+}
+
+.links{
+  color:#393d44;
+  font-size: 15px;
+  line-height: 160%;
+  font-weight: 100;
+  width: 760px;
+  text-align: center;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 25px 25px;
+  margin: auto;
+}
+
+footer, .underform {
+  color:#393d44;
+  font-size: 20px;
+  font-weight: 100;
+  width: 760px;
+  padding: 25px;
+  text-align: left;
+  background-color: rgba(255,255,255, 0.7);
+  margin: auto;
+}
+
+.underForm {
+  width: 840px;
+}
+
+.about, #click1, #click2, #click3, #click4, #click5, #click6, #click7  {
+  color:#393d44;
+  font-size: 20px;
+  line-height: 160%;
+  font-weight: 100;
+  width: 760px;
+  text-align: left;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 25px 25px;
+  margin: auto;
+}
+
+.label {
+  float: left;
+  position: relative;
+  left: 270px;
+  color:#393d44;
+  font-size: 20px;
+  line-height: 160%;
+  font-weight: 100;
+  width: 760px;
+  text-align: left;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 25px 25px;
+  margin: auto;
+}
+
+.picturecredit{
+  float: left;
+  color:rgba(0, 0, 0, 0.75);
+  font-size: 15px;
+  position: relative; top: 100px;
+}
+#click1, #click2, #click3, #click4, #click5, #click6, #click7 {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+#click1:hover, #click2:hover, #click3:hover, #click4:hover, #click5:hover, #click6:hover, #click7:hover {
+  background-color: rgba(54,255,255, 1.0);
+}
+
+#clickMore1, #clickMore2, #clickMore3, #clickMore4, #clickMore5, #clickMore6, #clickMore7 {
+  display: none;
+}
+
+#contactForm, #mentorForm, #menteeForm {
+  color: #393d44;
+  line-height: 160%;
+  font-weight: 100;
+  width: 760px;
+  background-color: rgba(255,255,255, 0.7);
+  padding: 25px;
+  margin: auto;
+  text-align: left;
+}
+
+/*Makes the textarea larger because there will probably be longer chunks of text than
+the previous responses. I learned how to do this from W3Schools:
+https://www.w3schools.com/howto/howto_css_contact_form.asp*/
+textarea {
+  height: 100px;
+  width: 500px;
+}
+.errorContainer {
+  color: red;
+  font-style: italic;
+  font-weight: bold;
+}
+.errorHidden {
+  display: none;
+}
+
+@media only screen and (min-width: 1101px) {
+  .label {
+    float: left;
+    position: relative;
+    left: 270px;
+    color:#393d44;
+    font-size: 20px;
+    line-height: 160%;
+    font-weight: 100;
+    width: 760px;
+    text-align: left;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 25px 25px;
+    margin: auto;
+  }
+}
+/*Tablet*/
+@media only screen and (max-width: 1100px) and (min-width: 701px){
+  #home{
+    background-repeat:repeat;
+  }
+
+  ul {
+    list-style-type: none;
+    background-color: rgba(255,255,255, 0.8);
+    overflow: hidden;
+    /* Learned how to make this type of nav bar from: https://www.w3schools.com/css/css_navbar.asp
+    I fully understand list-style-type: none; gets rid of the automatic styling of HTML (like the bullet points)
+    and that the margins clears a certain area around an element, while padding clears a certain area within an element around the content
+    I understand that rgba gives the color, with the last value corresponding to opacity
+    The overflow: hidden specifies that if the element's box is too small, the overflown elements will be hidden
+    The width indicates that the nav bar should take up 99% of the screen width.*/
+  }
+
+  li {
+    display:inline;
+  }
+
+  nav{
+    text-align: center;
+  }
+
+  li a {
+    display:inline-block;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    /* Learned how to format the text in the nav bar at https://www.w3schools.com/css/css_navbar.asp
+    I fully understand that display: block; means that the element is displayed as a block. This means that it
+    has some white space around it and generally does not have other HTML elements near it unless specified
+    The color indicates the text color black, with the last value (0.6) indicating the opacity
+    text-align; center indicates that the text should be centered within its block
+    padding 20px means that there are 20 px of space around each side of the content within the block
+    text-decoration: none gets rid of the usual underline and all other text decorations
+    and postion: relative denotes the position relative to the regular normal position*/
+  }
+
+  .heading1, .heading2, .about {
+    line-height: 160%;
+  }
+
+  img {
+    display:block;
+    margin-top: 25px;
+    width: 50%;
+    border: 0px solid;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin:auto;
+    margin-top: 25px;
+  }
+
+  .heading1 {
+    margin-left: 0px;
+    width: 99%;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 70px;
+    font-weight:100;
+    background-color: rgba(255,255,255, 0.7);
+    color: #393d44;
+    letter-spacing: 5px;
+  }
+
+  .heading2, .about, #click1, #click2, #click3, #click4, #click5, #click6, #click7 {
+    color: #393d44;
+    font-size: 30px;
+    line-height: 160%;
+    font-weight: 100;
+    width: 75%;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 25px;
+    margin: auto;
+  }
+
+  #click1, #click2, #click3, #click4, #click5, #click6, #click7 {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  footer, .underform {
+    color:#393d44;
+    font-size: 20px;
+    font-weight: 100;
+    width: 75%;
+    padding: 25px;
+    text-align: left;
+    background-color: rgba(255,255,255, 0.7);
+    margin: auto;
+  }
+
+  #homeimage {
+    margin-top: 200px;
+  }
+
+  .heading1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+  }
+
+  .heading2, .heading2E {
+    font-size: 25px;
+  }
+
+  .about {
+    font-size: 18px;
+  }
+
+  .picturecredit{
+    font-size: 5px;
+    position: relative; top: 150px;
+  }
+
+}
+@media screen and (max-width: 700px) {
+
+  #home{
+    background-repeat:repeat;
+  }
+  ul {
+    list-style-type: none;
+    background-color: rgba(255,255,255, 0.8);
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  li {
+    display: block;
+    margin: auto;
+    width: 200px;
+  }
+
+  img {
+    display:block;
+    margin-top: 25px;
+    width: 75%;
+    border: 0px solid;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin:auto;
+    margin-top: 25px;
+  }
+
+  li a {
+    display: block;
+    display:inline-block;
+    color: rgba(0, 0, 0, 0.6);
+    padding: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 90%;
+  }
+
+  #homeimage {
+    margin-top: 200px;
+  }
+
+  #contactForm, #mentorForm, #menteeForm {
+    color: #393d44;
+    line-height: 160%;
+    font-weight: 100;
+    width: 75%;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 25px;
+    margin: auto;
+    text-align: left;
+  }
+
+  textarea {
+    width: 100%;
+  }
+
+  .heading1 {
+    margin-left: 0px;
+    width: 99%;
+    padding: 5px 5px;
+    text-align: center;
+    font-size: 70px;
+    font-weight:100;
+    background-color: rgba(255,255,255, 0.7);
+    color: #393d44;
+    letter-spacing: 5px;
+  }
+
+  .heading2, .about {
+    color: #393d44;
+    font-size: 30px;
+    line-height: 160%;
+    font-weight: 100;
+    width: 75%;
+    text-align: center;
+    background-color: rgba(255,255,255, 0.7);
+    padding: 25px;
+    margin: auto;
+  }
+
+  .about, .heading2, #click1, #click2, #click3, #click4, #click5, #click6, #click7 {
+    margin: auto;
+    padding: 25px;
+    width: 75%;
+    font-size: 20px;
+  }
+
+  .heading1, .heading2, .about, #click1, #click2, #click3, #click4, #click5, #click6, #click7  {
+    line-height: 160%;
+  }
+
+  .heading1 {
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin: auto;
+    width: 90%;
+    padding: 5px 5px;
+  }
+
+  .about, #click1, #click2, #click3, #click4, #click5, #click6, #click7 {
+    font-size: 16px;
+  }
+
+  #click1, #click2, #click3, #click4, #click5, #click6, #click7 {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  footer, .underform {
+    color:#393d44;
+    font-size: 16px;
+    font-weight: 100;
+    width: 75%;
+    display: block;
+    text-align: left;
+    background-color: rgba(255,255,255, 0.7);
+    margin: auto;
+  }
+  #button_container {
+    padding: 5px;
+  }
+
+  .slide_button {
+    color: #393d44;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 16px;
+    background-color: rgba(255,255,255, 0.7);
+    border-color: black;
+  }
+  #back {
+    margin-left: 50px;
+  }
+
+  #next {
+    margin-right: 50px;
+  }
+
+  .smaller {
+    width: 40%;
+  }
+
+}
